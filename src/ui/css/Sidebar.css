@@ -1,0 +1,25 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.sidebar.left {
+    left: 0;
+}
+
+.sidebar.right {
+    right: 0;
+}
+
+.main-content.left {
+    margin-left: 250px;
+}
+
+.main-content.right {
+    margin-right: 250px;
+}
