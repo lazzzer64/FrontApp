@@ -1,7 +1,7 @@
 export function Sidebar() {
     return (
         <main>
-            <p>Hello World</p>
+            <p>Hello World from Sidebar</p>
         </main>
     )
 }
