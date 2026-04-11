@@ -1,0 +1,7 @@
+.main {
+    display: grid;
+    place-items: center;
+    background: hsl(257, 37%, 4%);
+    width: 100vw;
+    height: 80vh;
+}
