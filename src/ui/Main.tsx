@@ -1,7 +1,11 @@
+import TodoList from "../TodoList.tsx";
+import todos from "../todos.tsx";
+
 export function Main() {
     return (
         <main>
-            <p>Hello World from Main</p>
+            <TodoList list={todos}/>
+
         </main>
     )
 }
