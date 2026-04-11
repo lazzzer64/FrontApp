@@ -18,7 +18,6 @@ const TextField: React.FC<TextFieldProps> = ({
                                                  disabled = false,
                                              }) => {
     return (
-        // <div className="text-field">
         <textarea
             className="no-resize"
             placeholder={placeholder}
@@ -28,9 +27,7 @@ const TextField: React.FC<TextFieldProps> = ({
 
 
         />
-        // </div>
-    )
-        ;
+    );
 };
 
 export default TextField;

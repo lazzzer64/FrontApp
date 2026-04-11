@@ -1,7 +1,7 @@
 .main {
     display: grid;
     place-items: center;
-    background: hsl(257, 37%, 4%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     width: 100vw;
     height: 80vh;
 }
