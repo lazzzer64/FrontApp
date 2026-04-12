@@ -17,7 +17,7 @@ class SaveButton extends React.Component<MyButtonProps> {
                 className="save-button"
                 onClick = {() => this.handleClick(this.props.text)}
             >
-                Сохранить {this.props.text}
+                Сохранить
             </button>
         )
     }
