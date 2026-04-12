@@ -1,5 +1,3 @@
-// components/TextField.tsx
-import React from 'react';
 import '../css/TextArea.css'
 
 interface TextFieldProps {
