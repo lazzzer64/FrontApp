@@ -1,4 +1,5 @@
 import '../css/TextArea.css'
+import React from "react";
 
 interface TextFieldProps {
     placeholder?: string;
@@ -6,7 +7,8 @@ interface TextFieldProps {
     disabled?: boolean;
     style?: string;
     rows?: number;
-    cols?: number
+    cols?: number;
+    onChange: (text: string) => void;
 }
 
 const TextField: React.FC<TextFieldProps> = ({
@@ -14,11 +16,18 @@ const TextField: React.FC<TextFieldProps> = ({
                                                  rows = 30,
                                                  cols = 150,
                                                  disabled = false,
+                                                 onChange,
                                              }) => {
+
+    const handleTextChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+        onChange(event.target.value);
+    }
+
     return (
         <textarea
             className="no-resize"
             placeholder={placeholder}
+            onChange={handleTextChange}
             disabled={disabled}
             rows={rows}
             cols={cols}
