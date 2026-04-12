@@ -2,6 +2,7 @@ import './App.css'
 // import {Header} from "./ui/Header.tsx";
 // import Footer from "./ui/Footer.tsx";
 import {PastebinApp} from "./ui/PastebinApp/PastebinApp.tsx";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -9,11 +10,13 @@ import {PastebinApp} from "./ui/PastebinApp/PastebinApp.tsx";
 function App() {
 
     return (
-        <div>
-            {/*<Header/>*/}
-            <PastebinApp/>
-            {/*<Footer/>*/}
-        </div>
+        <BrowserRouter>
+            <Link to="/pastebin">Pastebin</Link>
+            <Routes>
+                <Route path="/pastebin" element={<PastebinApp />} />
+                <Route path="/xyu" element={<PastebinApp />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
