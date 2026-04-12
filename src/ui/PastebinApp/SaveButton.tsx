@@ -8,14 +8,14 @@ interface MyButtonProps {
 class SaveButton extends React.Component<MyButtonProps> {
 
     handleClick = (text: string) => {
-            console.log('Сообщение отправлено: ' + text);
+        console.log('Сообщение отправлено: ' + text);
     };
 
     render() {
         return (
             <button
                 className="save-button"
-                onClick = {() => this.handleClick(this.props.text)}
+                onClick={() => this.handleClick(this.props.text)}
             >
                 Сохранить
             </button>

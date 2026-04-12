@@ -10,10 +10,9 @@ export function PastebinApp() {
         setText(text);
     }
 
-
     return (
         <main className="main">
-            <TextField onChange={ handleTextChange }/>
+            <TextField onChange={handleTextChange}/>
             <SaveButton text={text}/>
         </main>
     )

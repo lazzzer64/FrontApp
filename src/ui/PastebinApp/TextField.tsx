@@ -31,8 +31,6 @@ const TextField: React.FC<TextFieldProps> = ({
             disabled={disabled}
             rows={rows}
             cols={cols}
-
-
         />
     );
 };
