@@ -26,11 +26,12 @@ class SaveButton extends React.Component<MyButtonProps> {
         const file = new File([blob], this.generateFileName(), {type: 'text/plain'});
 
         const formData = new FormData();
-        formData.append('file', file);
+        formData.append("filename", this.generateFileName());
+        formData.append("file", file);
 
-        await fetch('/api/v1/upload', {
+        await fetch('http://localhost:8080/api/v1/upload', {
             method: 'POST',
-            body: formData,
+            body: formData
         });
     }
 
