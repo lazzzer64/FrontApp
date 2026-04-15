@@ -13,7 +13,7 @@ export function PastebinApp() {
     return (
         <main className="main">
             <TextField onChange={handleTextChange}/>
-            <SaveButton text={text}/>
+            <SaveButton content={text}/>
         </main>
     )
 }

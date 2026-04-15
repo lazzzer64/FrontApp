@@ -13,8 +13,8 @@ interface TextFieldProps {
 
 const TextField: React.FC<TextFieldProps> = ({
                                                  placeholder = 'Введите текст...',
-                                                 rows = 30,
-                                                 cols = 150,
+                                                 rows = 40,
+                                                 cols = 175,
                                                  disabled = false,
                                                  onChange,
                                              }) => {
