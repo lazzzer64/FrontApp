@@ -1,16 +1,50 @@
 import React from 'react';
 import '../css/SaveButton.css'
 
-interface SaveButtonProps {
-    onClick?: () => void;
+interface MyButtonProps {
+    content: string;
 }
 
-const SaveButton: React.FC<SaveButtonProps> = ({
+class SaveButton extends React.Component<MyButtonProps> {
 
-}) => {
-    return (
-        <button className="save-button">Сохранить</button>
-    )
+    handleClick = () => {
+        console.log('Сообщение отправлено: ' + this.generateFileName());
+        this.handleSubmit();
+    };
+
+    generateFileName () {
+        const timestamp = Date.now();
+        const random = Math.random().toString(36).substring(2, 8);
+        return `${timestamp}_${random}.txt`;
+    }
+
+    async handleSubmit() {
+        const content = this.props.content;
+        console.log(content);
+
+        const blob = new Blob([content], {type: 'text/plain'});
+        const file = new File([blob], this.generateFileName(), {type: 'text/plain'});
+
+        const formData = new FormData();
+        formData.append("filename", this.generateFileName());
+        formData.append("file", file);
+
+        await fetch('http://localhost:8080/api/v1/upload', {
+            method: 'POST',
+            body: formData
+        });
+    }
+
+    render() {
+        return (
+            <button
+                className="save-button"
+                onClick={() => this.handleClick()}
+            >
+                Сохранить
+            </button>
+        )
+    }
 }
 
 export default SaveButton;
