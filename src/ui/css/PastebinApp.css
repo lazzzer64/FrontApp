@@ -1,8 +1,20 @@
 .main {
     display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "aside content";
     place-items: center;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     width: 100%;
     height: 100vh;
     margin: 0px;
+}
+
+aside {
+    grid-area: aside;
+    padding: 15px;
+}
+
+.content {
+    grid-area: content;
+    text-align: center;
 }
