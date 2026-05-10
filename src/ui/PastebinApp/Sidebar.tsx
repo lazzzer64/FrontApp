@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import usePosts from "../../hooks/usePosts.tsx";
 
 const SseList: React.FC = () => {
     const [items, setItems] = useState<string[]>([]);
 
+
+
     useEffect(() => {
-        fetch('http://localhost:8080/api/v1/archive')
-                .then(response => response.json())
-                .then((data: string[]) => setItems(data))
-                .catch(error => console.error('Ошибка:', error));
+        usePosts();
+
 
         // Создаём подключение к SSE-потоку
         const eventSource = new EventSource('http://localhost:8080/api/v1/stream');

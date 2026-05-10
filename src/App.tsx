@@ -1,19 +1,17 @@
-import './App.css'
-// import {Header} from "./ui/Header.tsx";
-// import Footer from "./ui/Footer.tsx";
-import PastebinApp from "./ui/PastebinApp/PastebinApp.tsx";
+import Main from "./components/Main.tsx";
+import Footer from "./components/Footer.tsx";
+import "./css/reset.css"
+import "./css/normalize.css"
+import "./css/app.css"
+import {Header} from "./components/Header.tsx";
 
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-
-function App() {
-
+const App = () => {
     return (
-        <div>
-            {/*<Header/>*/}
-            <PastebinApp/>
-            {/*<Footer/>*/}
-        </div>
+        <>
+            <Header />
+            <Main/>
+            <Footer/>
+        </>
     )
 }
 
