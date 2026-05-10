@@ -1,5 +1,5 @@
 header {
-    width: 100vw;
+    width: 100%;
     height: 6vh;
     background: #023859 linear-gradient(#023859, #02456c);
     -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .52);
@@ -23,7 +23,7 @@ header {
     flex: 0 0 auto;
     position: relative;
     margin: 0 auto;
-    max-width: 1340px;
+    max-width: 100%;
 
     display: -webkit-box;
     display: flex;

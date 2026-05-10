@@ -3,12 +3,13 @@ import Footer from "./components/Footer.tsx";
 import "./css/reset.css"
 import "./css/normalize.css"
 import "./css/app.css"
-import {Header} from "./components/Header.tsx";
+import {Header} from "./components/Header.tsx"
+    ;
 
 const App = () => {
     return (
         <>
-            <Header />
+            <Header/>
             <Main/>
             <Footer/>
         </>
