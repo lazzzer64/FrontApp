@@ -1,20 +1,9 @@
 main {
-    padding-top: 6vh;
+    padding-top: 7vh;
     margin-inline: 5vw;
     display: grid;
-    gap: 10px;
-    grid-template-columns: 80% 20%;
-    grid-template-areas:
-    "blank blank"
-    "input ."
-    "postform aside"
-    "postform ."
-    "button .";
-    /*min-height: 84vh;*/
-    /*justify-items: center;*/
-    /*grid-auto-columns: 5px;*/
-    row-gap: 0px;
-    column-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     min-width: 0;
     overflow-x: hidden;
 }
@@ -29,19 +18,18 @@ main {
 }
 
 aside {
-    grid-area: aside;
-    /*background-color: gray;*/
+    grid-area: 1 / 3 / 2 / 4;
     min-height: 40vh;
     padding-top: 5px;
     margin-top: 5px;
 }
 
 .postform {
-    grid-area: postform;
+    grid-area: 1 / 1 / 2 / 3;
     position: relative;
-    min-height: 70vh;
+    min-height: 80vh;
     /*gap: 0px 5px;*/
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 
 .post_title {
@@ -51,18 +39,10 @@ aside {
 }
 
 .postformtext {
-    box-sizing: border-box;
-
-    /* Растягиваем на 100% родителя */
-    width: 100%;
-    height: 100%;
-
-    /* Убираем возможность ручного изменения размера (опционально) */
+    width: 100vh;
+    height: 80vh;
     resize: none;
-
-    /* Убираем лишние отступы, которые браузер может добавлять */
-    margin-right: 100vw;
-    padding: 5px;
+    padding: 0px;
 
     border: 1px solid gray;
 }
@@ -71,10 +51,35 @@ aside {
     grid-area: input;
     margin-bottom: 5px;
     border: 1px solid gray;
-    width: 88.75%;
+    width: 100vh;
+    padding: 0px;
+}
 
-    margin-right: 10%;
-    padding-right: 10%;
+.postformsubmit {
+    grid-area: button;
+    display: inline-grid;
+    width: 20vh;
+
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+    font-size: 13px;
+    min-width: 73px;
+
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-radius: 3px;
+
+    font-weight: 600;
+    height: 35px;
+    line-height: 34px;
+    padding: 0 25px;
+
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+
+    margin-top: 1vh;
+    margin-left: 1vh;
 }
 
 .postformsubmit {

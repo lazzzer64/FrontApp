@@ -8,7 +8,6 @@ const Main = () => {
             <div className={'blank'}></div>
             <PostForm/>
             <Aside/>
-
         </main>
     )
 }
