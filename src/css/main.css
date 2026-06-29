@@ -24,6 +24,17 @@ aside {
     margin-top: 5px;
 }
 
+.aside_posts {
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+}
+
+.post {
+    padding-left: 20px;
+}
+
 .postform {
     grid-area: 1 / 1 / 2 / 3;
     position: relative;
@@ -53,33 +64,6 @@ aside {
     border: 1px solid gray;
     width: 100vh;
     padding: 0px;
-}
-
-.postformsubmit {
-    grid-area: button;
-    display: inline-grid;
-    width: 20vh;
-
-    background-color: #ddd;
-    color: #000;
-    cursor: pointer;
-    font-size: 13px;
-    min-width: 73px;
-
-    text-align: center;
-    text-decoration: none;
-    border: 0;
-    border-radius: 3px;
-
-    font-weight: 600;
-    height: 35px;
-    line-height: 34px;
-    padding: 0 25px;
-
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
-
-    margin-top: 1vh;
-    margin-left: 1vh;
 }
 
 .postformsubmit {
