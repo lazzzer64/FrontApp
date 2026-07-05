@@ -2,9 +2,9 @@ import {useState} from 'react';
 import TextField from "./TextField.tsx";
 import SaveButton from "./SaveButton.tsx";
 import '../css/PastebinApp.css';
-import ArchivePost from "./ArchivePost.tsx";
+import Sidebar from "./Sidebar.tsx";
 
-export function PastebinApp() {
+function PastebinApp() {
     const [text, setText] = useState('');
 
     const handleTextChange = (text: string) => {
@@ -13,9 +13,15 @@ export function PastebinApp() {
 
     return (
         <main className="main">
-            <TextField onChange={handleTextChange}/>
-            <SaveButton content={text}/>
-            <ArchivePost />
+            <div className="content">
+                <TextField onChange={handleTextChange}/>
+                <SaveButton content={text}/>
+            </div>
+            <aside>
+                <Sidebar/>
+            </aside>
         </main>
     )
 }
+
+export default PastebinApp

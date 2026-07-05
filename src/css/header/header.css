@@ -1,0 +1,198 @@
+header {
+    width: 100vw;
+    height: 6vh;
+    background: #023859 linear-gradient(#023859, #02456c);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .52);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .52);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex;
+    padding: 0;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    margin: 0 auto;
+    max-width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+
+.header__logo {
+    background: url("../../assets/pastebin.webp") no-repeat left;
+    max-width: 100%;
+    height: auto;
+    background-clip: initial;
+    color: #fff;
+    background-size: 2.5vw auto;
+    cursor: pointer;
+
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 25px 0 5px;
+    padding: 1vw 0 1vw 3vw;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.header__container__nav {
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: clamp(16px, 1.5vh, 22px);
+
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    unicode-bidi: isolate;
+}
+
+.header__container__nav a {
+    margin: 0 24px 0 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.new_post_btn {
+    background-image: url("../../assets/spritesheet.webp");
+    background-position: -17px -16px;
+    background-color: #61ba65;
+    background-size: 78px 3208px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: clamp(12px, 2vh, 22px);
+    height: 30px;
+    line-height: 28px;
+    text-transform: lowercase;
+    margin: 2px 8px 0 3px;
+    padding: 0 10px 0 26px;
+}
+
+.header__search form {
+    display: inline;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.header__search input.search__input {
+    background: #02507d;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    vertical-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 0 0 16px;
+    padding: 0 34px 0 7px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.header__search .search__button {
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    opacity: .8;
+    padding-right: 7px;
+}
+
+button, input {
+    line-height: normal;
+}
+
+button, input, select, textarea {
+    outline: none;
+    border: none;
+    margin: 0;
+}
+
+.header__search .search__button .icon__search {
+    vertical-align: top;
+}
+
+button.search__button {
+    vertical-align: center;
+}
+
+.icon {
+    fill: white;
+    line-height: 100px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.header__search__form {
+    display: flex;
+    align-items: center;
+
+}
+
+:not(svg) {
+    transform-origin: 0;
+}
+
+
+
+.sign-up {
+    color: #023f63;
+    background: #fff;
+}
+
+.sign-in {
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+}
+
+.btn-sign {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 0 0 1vw;
+    padding: 0 0.75vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(14px, 1vh, 22px);
+
+}
+
+:not(svg) {
+    transform-origin: 0 0;
+}
+
+.link, a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

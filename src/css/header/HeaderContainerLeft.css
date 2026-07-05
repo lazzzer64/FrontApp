@@ -1,0 +1,9 @@
+.header__container__left {
+    -webkit-box-pack: start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: clip;
+    isolation: isolate;
+    padding-left: 5vw
+}

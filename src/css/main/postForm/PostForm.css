@@ -1,0 +1,51 @@
+/* Общий контейнер формы */
+.postform {
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease;
+    grid-area: 1 / 1 / 2 / 3;
+    min-height: 80vh;
+    margin-right: 20px;
+}
+
+.postform:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+}
+
+.postform-title:focus,
+.postform-text:focus {
+    outline: none;
+    border-color: #aa3bff;
+    box-shadow: 0 0 0 4px rgba(170, 59, 255, 0.15);
+    background: #ffffff;
+}
+
+/* Текстовое поле (если обёртка с классом .textarea-field) */
+.postform-text {
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+}
+
+
+
+/* Сообщение об ошибке */
+.error {
+    margin-top: 12px;
+    padding: 10px 14px;
+    color: #b91c1c;
+    background: #fee2e2;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    border-left: 4px solid #b91c1c;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 640px) {
+    .postform {
+        padding: 16px 18px;
+    }
+    .postform-title,
+    .postform-text textarea {
+        font-size: 0.95rem;
+    }
+}

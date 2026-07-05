@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+main {
+    margin-top: 7vh;
+    margin-bottom:5vh;
+    margin-inline: 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    min-width: 0;
+    overflow-x: hidden;
+}

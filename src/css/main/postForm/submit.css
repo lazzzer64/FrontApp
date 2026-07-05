@@ -1,0 +1,35 @@
+/* Кнопка отправки */
+.submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: #ffffff;
+    background: #02507d;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 8px #02507d;
+}
+
+.submit:hover:not(:disabled) {
+    box-shadow: 0 4px 14px #02507d;
+    transform: translateY(-1px);
+}
+
+.submit:active:not(:disabled) {
+    transform: translateY(0px);
+    box-shadow: 0 2px 6px #02507d;
+}
+
+.submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}

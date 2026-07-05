@@ -1,0 +1,21 @@
+import "../css/main/postForm/postFormTextField.css"
+
+interface TextAreaFieldProps {
+    value: string;
+    onChange: (val: string) => void;
+}
+
+const TextAreaField = ({value, onChange}: TextAreaFieldProps) => {
+    return (
+        <textarea
+            className="postform-text"
+            id="postform-text"
+            placeholder="Содержание поста"
+            autoComplete="off"
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+        />
+    )
+}
+
+export default TextAreaField

@@ -1,5 +1,6 @@
 .save-button {
     /*background: white;*/
+    display: inline-block;
     border: none;
     border-radius: 15px;
     cursor: pointer;
