@@ -1,20 +1,15 @@
-import type { IPost } from '../types/postInterface';
+import React from "react";
 
-interface PostItemProps {
-    post: IPost;
-}
+import "../css/main/aside/PostItem.css"
 
-const PostItem = ({ post }: PostItemProps) => {
+import type {PostItemPropsInterface} from "../types/PostItemPropsInterface.tsx";
+
+
+const PostItem: ({post}: PostItemPropsInterface) => React.JSX.Element = ({post}: PostItemPropsInterface) => {
     return (
         <div className="post-item">
             <h3 className="post-item__title">{post.title}</h3>
             <p className="post-item__content">{post.content}</p>
-            {/*{post.details && (*/}
-            {/*    <p className="post-item__details">*/}
-            {/*        <strong>Детали:</strong> {post.details}*/}
-            {/*    </p>*/}
-            {/*)}*/}
-            {/*<small className="post-item__id">ID: {post.id}</small>*/}
         </div>
     );
 };

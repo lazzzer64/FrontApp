@@ -1,6 +1,11 @@
+import "../css/main/postForm/PostForm.css"
+import "../css/main/postForm/postFromTitle.css"
+import "../css/main/postForm/submit.css"
+
 import {useState} from 'react';
 import TextAreaField from './TextAreaField';
 import {useCreatePost} from '../hooks/usePosts';
+
 
 const PostForm = () => {
     const [title, setTitle] = useState('');
@@ -27,9 +32,11 @@ const PostForm = () => {
     };
 
     return (
-        <form className="postform" onSubmit={handleSubmit}>
+        <form className="postform"
+              onSubmit={handleSubmit}
+        >
             <input
-                className="inputOfTextarea"
+                className="postform-title"
                 placeholder="Название поста"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
@@ -42,7 +49,7 @@ const PostForm = () => {
             />
             <button
                 type="submit"
-                className="postformsubmit"
+                className="submit"
                 disabled={createPostMutation.isPending}
             >
                 {createPostMutation.isPending ? 'Отправка...' : 'Создать пост'}

@@ -1,3 +1,5 @@
+import '../css/header/HeaderContainerRight.css';
+
 const HeaderSign = () => {
     return (
         <div className="header__container__right">

@@ -1,19 +1,20 @@
 .post-item {
     border: 1px solid #ddd;
     padding: 12px 16px;
-    margin-bottom: 12px;
+    /*max-height: 1%;*/
+    margin-bottom: 3%;
     border-radius: 8px;
     background: #fafafa;
 }
 
 .post-item__title {
     margin: 0 0 8px;
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
     color: #222;
 }
 
 .post-item__content {
-    margin: 0 0 6px;
+    /*margin: 0 0 6px;*/
     color: #555;
 }
 

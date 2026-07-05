@@ -1,6 +1,6 @@
 import HeaderContainerRight from "./HeaderSign.tsx";
 import HeaderContainerLeft from "./HeaderContainerLeft.tsx";
-import '../css/header.css';
+import '../css/header/header.css';
 
 const HeaderContainer = () => {
     return (

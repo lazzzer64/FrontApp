@@ -1,5 +1,6 @@
 import NavigationMenu from "./NavigationMenu.tsx";
 import HeaderSearch from "./HeaderSearch.tsx";
+import "../css/header/HeaderContainerLeft.css"
 
 const HeaderContainerLeft = () => {
 return (

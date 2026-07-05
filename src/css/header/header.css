@@ -1,5 +1,5 @@
 header {
-    width: 100%;
+    width: 100vw;
     height: 6vh;
     background: #023859 linear-gradient(#023859, #02456c);
     -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .52);
@@ -10,54 +10,26 @@ header {
     right: 0;
     left: 0;
     z-index: 1030;
-    -webkit-box-align: center;
     display: flex;
-    align-items: center;
-}
-
-.header__container {
-    height: 100%;
     padding: 0;
-
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    position: relative;
     margin: 0 auto;
     max-width: 100%;
-
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 90%;
 }
 
-.header__container, .header__container__left {
-    height: 100%;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 
-.header__container__left {
-    -webkit-box-pack: start;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    overflow: clip;
-    isolation: isolate;
-    /*position: relative;*/
-}
 
 .header__logo {
-    background: url("../assets/pastebin.webp") no-repeat left;
+    background: url("../../assets/pastebin.webp") no-repeat left;
     max-width: 100%;
     height: auto;
     background-clip: initial;
@@ -69,7 +41,7 @@ header {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0 25px 0 5px;
-    padding: 1vw 0vw 1vw 3vw;
+    padding: 1vw 0 1vw 3vw;
 
     font-family: "Roboto", sans-serif;
 }
@@ -99,7 +71,7 @@ header {
 }
 
 .new_post_btn {
-    background-image: url("../assets/spritesheet.webp");
+    background-image: url("../../assets/spritesheet.webp");
     background-position: -17px -16px;
     background-color: #61ba65;
     background-size: 78px 3208px;
@@ -132,7 +104,7 @@ header {
     height: 30px;
     line-height: 30px;
     margin: 2px 0 0 16px;
-    padding: 0px 34px 0 7px;
+    padding: 0 34px 0 7px;
     -moz-appearance: none;
     -webkit-appearance: none;
 }
@@ -182,31 +154,14 @@ svg:not(:root) {
 }
 
 :not(svg) {
-    transform-origin: 0px 0px;
+    transform-origin: 0;
 }
 
-.header__container__right {
-    height: 100%;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
 
-    height: 30px;
-    line-height: 30px;
-    text-align: right;
-    margin: 2px 5px 0 0;
-    padding-right: 15px;
-}
 
 .sign-up {
     color: #023f63;
     background: #fff;
-    /*align-items: center;*/
 }
 
 .sign-in {
@@ -219,8 +174,8 @@ svg:not(:root) {
     border: 1px solid #fff;
     border-radius: 3px;
     cursor: pointer;
-    margin: 0vh 0vw 0vh 1vw;
-    padding: 0vh 0.75vw;
+    margin: 0 0 0 1vw;
+    padding: 0 0.75vw;
     text-align: center;
     text-transform: uppercase;
     font-size: clamp(14px, 1vh, 22px);
@@ -228,7 +183,7 @@ svg:not(:root) {
 }
 
 :not(svg) {
-    transform-origin: 0px 0px;
+    transform-origin: 0 0;
 }
 
 .link, a {

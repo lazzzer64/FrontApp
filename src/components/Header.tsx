@@ -1,11 +1,16 @@
-import '../css/header.css';
-import HeaderContainer from "./HeaderContainer.tsx";
+import '../css/header/header.css';
+
+import HeaderContainerLeft from "./HeaderContainerLeft.tsx";
+import HeaderContainerRight from "./HeaderSign.tsx";
 
 export function Header() {
     return (
         <header>
-            <HeaderContainer/>
+            <HeaderContainerLeft/>
+            <HeaderContainerRight/>
         </header>
 
     );
 }
+
+export default Header;
