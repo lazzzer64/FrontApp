@@ -4,11 +4,8 @@ import {usePosts} from "../../hooks/usePosts.ts";
 const SseList: React.FC = () => {
     const [items, setItems] = useState<string[]>([]);
 
-
-
     useEffect(() => {
         usePosts();
-
 
         // Создаём подключение к SSE-потоку
         const eventSource = new EventSource('http://localhost:8080/api/v1/stream');
