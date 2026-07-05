@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import usePosts from "../../hooks/usePosts.tsx";
+import usePosts from "../../hooks/usePosts.ts";
 
 const SseList: React.FC = () => {
     const [items, setItems] = useState<string[]>([]);

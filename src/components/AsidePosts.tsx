@@ -1,11 +1,20 @@
 import Post from "./Post.tsx";
-import data from "../../public/Posts.json"
+import {useEffect, useState} from "react";
 
 const AsidePosts = () => {
+
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:3001/posts")
+            .then((res: Response) => res.json())
+            .then(setPosts)
+    }, [])
+
     return (
         <ul className="aside_posts">
-            {data.map(post =>
-                <Post id={post.id} details={post.details}/>
+            {posts.map(({content, details, id, title}: never) =>
+                <Post key={id} id={id} details={details} title={title} content={content}/>
             )}
         </ul>
     )

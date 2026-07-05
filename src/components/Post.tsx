@@ -1,11 +1,4 @@
-// import IPost from "../interfaces/postInterface.tsx";
-
-interface IPost {
-    id: number;
-    // title: string;
-    // content: string;
-    details: string;
-}
+import type {IPost} from "../types/postInterface.tsx";
 
 const Post = ({id, details}: IPost) => {
     return (
