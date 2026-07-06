@@ -1,10 +1,10 @@
-import "../css/main/postForm/PostForm.css"
-import "../css/main/postForm/postFromTitle.css"
-import "../css/main/postForm/submit.css"
+import "../../../../styles/main/postForm/PostForm.css"
+import "../../../../styles/main/postForm/postFromTitle.css"
+import "../../../../styles/main/postForm/submit.css"
 
 import {useState} from 'react';
-import TextAreaField from './TextAreaField';
-import {useCreatePost} from '../hooks/usePosts';
+import TextAreaField from './TextAreaField.tsx';
+import {useCreatePost} from '../../../../features/posts/hooks/usePosts.ts';
 
 
 const PostForm = () => {

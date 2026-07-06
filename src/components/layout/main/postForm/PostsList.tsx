@@ -1,5 +1,5 @@
 import React from "react";
-import {usePosts} from '../hooks/usePosts';
+import {usePosts} from '../../../../features/posts/hooks/usePosts.ts';
 import PostItem from "./PostItem.tsx";
 
 const PostsList: () => (React.JSX.Element) = () => {

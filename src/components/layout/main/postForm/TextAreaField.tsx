@@ -1,4 +1,4 @@
-import "../css/main/postForm/postFormTextField.css"
+import "../../../../styles/main/postForm/postFormTextField.css"
 
 interface TextAreaFieldProps {
     value: string;

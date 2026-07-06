@@ -1,5 +1,5 @@
-import Aside from "./Aside.tsx";
-import PostForm from "./PostForm.tsx";
+import Aside from "./aside/Aside.tsx";
+import PostForm from "./postForm/PostForm.tsx";
 
 const Main = () => {
     return (

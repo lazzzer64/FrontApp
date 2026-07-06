@@ -1,11 +1,11 @@
 import React from "react";
 
-import "../css/main/aside/PostItem.css"
+import "../../../../styles/main/aside/PostItem.css"
 
-import type {PostItemPropsInterface} from "../types/PostItemPropsInterface.tsx";
+import type {postItem} from "../../../../types/postItem.ts";
 
 
-const PostItem: ({post}: PostItemPropsInterface) => React.JSX.Element = ({post}: PostItemPropsInterface) => {
+const PostItem: ({post}: postItem) => React.JSX.Element = ({post}: postItem) => {
     return (
         <div className="post-item">
             <h3 className="post-item__title">{post.title}</h3>

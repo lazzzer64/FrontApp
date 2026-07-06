@@ -1,4 +1,4 @@
-import '../css/header/HeaderContainerRight.css';
+import '../../../styles/header/HeaderContainerRight.css';
 
 const HeaderSign = () => {
     return (

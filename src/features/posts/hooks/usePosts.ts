@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { fetchPosts, createPost } from '../api/posts';
-import type {IPost} from "../types/postInterface.tsx";
+import { fetchPosts, createPost } from '../../../api/posts.ts';
+import type {IPost} from "../../../types/postInterface.ts";
 
 export const usePosts = () => {
     return useQuery({

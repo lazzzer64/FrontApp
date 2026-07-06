@@ -29,7 +29,7 @@ header {
 
 
 .header__logo {
-    background: url("../../assets/pastebin.webp") no-repeat left;
+    background: url("../../assets/images/webp/pastebin.webp") no-repeat left;
     max-width: 100%;
     height: auto;
     background-clip: initial;
@@ -71,7 +71,7 @@ header {
 }
 
 .new_post_btn {
-    background-image: url("../../assets/spritesheet.webp");
+    background-image: url("../../assets/images/webp/spritesheet.webp");
     background-position: -17px -16px;
     background-color: #61ba65;
     background-size: 78px 3208px;

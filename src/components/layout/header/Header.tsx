@@ -1,4 +1,4 @@
-import '../css/header/header.css';
+import '../../../styles/header/header.css';
 
 import HeaderContainerLeft from "./HeaderContainerLeft.tsx";
 import HeaderContainerRight from "./HeaderSign.tsx";
